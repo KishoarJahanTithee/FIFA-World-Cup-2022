@@ -1,0 +1,292 @@
+/* -------------------
+importing font
+---------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* --------------
+body
+------------------ */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+/* -----------------
+main
+-------------------- */
+main {
+  background-color: rgb(10, 80, 80);
+}
+/* -----------------
+header
+-------------------- */
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+.login i {
+  padding-right: 5px;
+}
+.login button {
+  background-color: rgb(191, 202, 32);
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  width: 123px;
+  height: 44px;
+  left: 1037px;
+  top: 0px;
+  padding: 10px 24px;
+  margin-top: 42px;
+  margin-right: 124px;
+}
+/* -----------------------
+First section
+-------------------------- */
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fifa-title {
+  padding-left: 156px;
+  margin-top: 0;
+  padding-top: 0px;
+  font-size: 64px;
+  font-weight: bold;
+}
+.banner h1 {
+  margin-bottom: 0;
+  color: white;
+  line-height: 100px;
+}
+.fifa-title a {
+  text-decoration: none;
+  color: white;
+}
+.fifa-title button {
+  background-color: rgb(191, 202, 32);
+  border: 0;
+  width: 168px;
+  height: 44px;
+  margin-top: 27px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 24px;
+}
+
+.half-width img {
+  width: 560px;
+  height: 442px;
+  padding-top: 103px;
+  padding-left: 102px;
+  padding-bottom: 86px;
+}
+
+/* -----------------------------
+transition
+------------------------------- */
+.banner-player {
+  transition: transform 1s ease-out;
+}
+.banner-player:hover {
+  transform: skew(-30deg);
+  transform-origin: right top;
+}
+
+/* -----------------
+players
+--------------------- */
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin-top: 70px;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  height: 474px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img {
+  width: 300px;
+  height: 256px;
+}
+.player h2 {
+  color: #18191f;
+  font-weight: bold;
+  font-size: 28px;
+}
+.player p {
+  color: #6c6c6c;
+  font-size: 16px;
+}
+
+/* ------------------------
+History of FIFA
+-----------------------*/
+
+.FIFA {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 180px;
+}
+.FIFA-history {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 20%;
+  text-align: justify;
+}
+.FIFA-history h1 {
+  font-size: 50px;
+}
+
+.record-button a {
+  text-decoration: none;
+  color: white;
+}
+.record-button i {
+  padding-right: 5px;
+}
+.record-button {
+  background-color: rgb(17, 61, 17);
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  width: 180px;
+  height: 44px;
+  left: 1037px;
+  top: 0px;
+  padding: 10px 24px;
+  margin-top: 12px;
+  margin-right: 124px;
+}
+.image-history {
+  padding-top: 80px;
+  padding-left: 20%;
+}
+
+/* ----------------------
+Extra section 2
+------------------------ */
+.upcoming {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 180px;
+}
+.upcoming-matches {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 20%;
+  text-align: justify;
+}
+.upcoming-matches h1 {
+  font-size: 50px;
+}
+
+.upcoming-button a {
+  text-decoration: none;
+  color: white;
+}
+.upcoming-button i {
+  padding-left: 5px;
+}
+.upcoming-button {
+  background-color: rgb(98, 187, 98);
+  background-image: linear-gradient(
+    to right,
+    rgb(17, 61, 17),
+    rgb(98, 187, 98)
+  );
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  width: 180px;
+  height: 44px;
+  left: 1037px;
+  top: 0px;
+  padding: 10px 24px;
+  margin-top: 12px;
+  margin-right: 124px;
+}
+.image-upcoming {
+  padding-top: 30px;
+  padding-left: 20%;
+}
+
+/* -----------------
+footer
+----------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 63px;
+}
+footer img {
+  width: 484px;
+  height: 110px;
+}
+footer .fab {
+  color: rgb(17, 50, 143);
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  padding-top: 20px;
+  opacity: 0.6;
+  line-height: 32px;
+}
+footer p {
+  font-size: 17px;
+}
+
+/* -------------------------
+Media Queries
+------------------------------- */
+
+/* Mobile devices */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .banner,
+  .players,
+  .FIFA,
+  .upcoming {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner {
+    padding-left: 0;
+  }
+  .players {
+    padding-left: 10%;
+    padding-right: 0;
+  }
+
+  .FIFA,
+  .upcoming {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  img {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
